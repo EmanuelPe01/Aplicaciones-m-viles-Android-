@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tienda Don Señor</string>
+    <string name="texto_articulo">Un articulo</string>
+    <string name="main_button">Agregar producto</string>
+    <string name="btn_1">Queso</string>
+    <string name="btn_2">Harina</string>
+    <string name="btn_3">Huevos</string>
+    <string name="btn_4">Aceite</string>
+    <string name="btn_5">Crema</string>
+    <string name="btn_6">Yogurth</string>
+    <string name="btn_7">Leche</string>
+    <string name="btn_8">Refresco</string>
+    <string name="btn_9">Cereal</string>
+    <string name="btn_10">Galletas</string>
+</resources>

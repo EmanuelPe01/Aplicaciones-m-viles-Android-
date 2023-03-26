@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Coding Challenge</string>
+    <string name="main_title">Algunos textos</string>
+    <string name="button_1">Elden Ring</string>
+    <string name="button_2">The legend of zelda</string>
+    <string name="button_3">Harry Potter</string>
+    <string name="article_title">Título del texto</string>
+    <string name="article_text">Texto</string>
+</resources>

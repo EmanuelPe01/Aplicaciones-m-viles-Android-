@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Saludar</string>
+    <string name="activity_name">Saludar</string>
+    <string name="button_saludar">Saludar</string>
+    <string name="txt_message">¡Hola ESCOM!</string>
+    <string name="edit_name">Escriba su nombre</string>
+    <string name="button_reply">Responder</string>
+    <string name="reply_message">Escribe la hora del día (0-23 hrs)</string>
+    <string name="text_header_reply">Respuesta recibida</string>
+</resources>

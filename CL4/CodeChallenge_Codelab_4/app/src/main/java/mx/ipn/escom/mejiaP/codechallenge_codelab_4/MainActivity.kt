@@ -1,0 +1,43 @@
+package mx.ipn.escom.mejiaP.codechallenge_codelab_4
+
+import android.content.Intent
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+
+
+class MainActivity : AppCompatActivity() {
+    companion object{
+        const val EXTRA_TITLE = "mx.ipn.escom.mejiaP.codechallenge_codelab_4.extra.TITLE"
+        const val EXTRA_TEXT = "mx.ipn.escom.mejiaP.codechallenge_codelab_4.extra.TEXT"
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+
+    fun viewTextBtn1(view: View) {
+        val intent = Intent(this, PassageText::class.java)
+        var historiaEldenRing = "Elden Ring es uno de los videojuegos más esperados de los últimos años. Desde que fue anunciado en el E3 2019, los fans han estado ansiosos por saber más sobre el próximo título de FromSoftware, el estudio japonés detrás de juegos aclamados como Dark Souls, Bloodborne y Sekiro: Shadows Die Twice. El juego está siendo dirigido por Hidetaka Miyazaki, el director de los anteriores títulos mencionados, y está siendo desarrollado en colaboración con George R.R. Martin, el autor de la serie de novelas Canción de Hielo y Fuego, que se adaptó a la exitosa serie de televisión Game of Thrones.\n\nLa historia de Elden Ring se mantiene en gran parte en secreto, pero se sabe que Miyazaki ha trabajado en la historia en colaboración con Martin, y los fans están emocionados por ver cómo el mundo de fantasía de Martin se combina con el mundo oscuro y retorcido de FromSoftware. La trama del juego se centra en el mundo de Elden Ring, un lugar en el que la colisión de poderosas fuerzas ha creado una gran variedad de paisajes y criaturas.\n\nEn el juego, los jugadores asumen el papel de un personaje personalizado que es convocado por el Elden Ring, un objeto divino que ha sido roto y ahora está disperso por todo el mundo. El objetivo del jugador es encontrar las partes del Elden Ring y restaurar su poder divino. Los jugadores tendrán que enfrentarse a peligrosos enemigos y superar desafiantes obstáculos para alcanzar su objetivo.\n\nEl mundo de Elden Ring es conocido por ser vasto y abierto, con múltiples rutas y caminos que los jugadores pueden tomar para explorar el mundo y descubrir sus secretos. La exploración es fundamental en el juego, y los jugadores pueden encontrar personajes únicos, enemigos, objetos y áreas ocultas en su camino hacia la restauración del Elden Ring.\n\nEl juego presenta un sistema de combate similar al de los juegos anteriores de FromSoftware, pero se dice que Elden Ring será más grande y más ambicioso que cualquiera de los juegos anteriores del estudio. Los jugadores tendrán acceso a una amplia variedad de armas, magia y habilidades, lo que les permitirá abordar los desafíos del juego de diferentes maneras.\n\nEl desarrollo de Elden Ring ha sido un proceso largo y difícil para FromSoftware. El juego fue anunciado en el E3 2019, pero se mantuvo en silencio durante más de un año. Los fans estaban preocupados por la falta de noticias y temían que el juego se hubiera cancelado. Finalmente, en enero de 2021, FromSoftware lanzó un tráiler del juego, que fue recibido con entusiasmo por los fans.\n\nEl juego se espera que sea lanzado en febrero de 2022, y los fans están ansiosos por ver lo que Miyazaki y Martin han creado juntos. La expectativa por el juego es enorme, y los fans esperan que Elden Ring sea uno de los mejores juegos de rol de acción de la historia. Con su mundo vasto y abierto, su sistema de combate desafiante y su historia intrigante, Elden Ring promete ser un juego que los jugadores recordar"
+        intent.putExtra(EXTRA_TITLE, "Breve historia de Elden Ring")
+        intent.putExtra(EXTRA_TEXT, historiaEldenRing)
+        startActivity(intent)
+    }
+
+    fun viewTextBtn2(view: View) {
+        val intent = Intent(this, PassageText::class.java)
+        var historiaZelda = "The Legend of Zelda es una serie de videojuegos de acción y aventura creada por Shigeru Miyamoto y Takashi Tezuka, y desarrollada y publicada por Nintendo. El primer juego de la serie se lanzó en 1986 para la consola Nintendo Entertainment System (NES), y desde entonces, la serie ha crecido hasta convertirse en una de las franquicias de videojuegos más populares de todos los tiempos.\n\nLa serie de juegos sigue al protagonista, Link, en sus aventuras por el reino de Hyrule, luchando contra el malvado Ganon y rescatando a la princesa Zelda. Cada juego de la serie presenta una historia única, pero todos tienen elementos en común, como la Espada Maestra y la Trifuerza, objetos sagrados que dan poder a aquellos que los poseen.\n\nLa serie de juegos ha sido elogiada por su jugabilidad innovadora, sus gráficos vibrantes y su música icónica. La serie ha evolucionado con el tiempo, pasando de la NES a la Super Nintendo, Nintendo 64, GameCube, Wii, Wii U y Nintendo Switch. Cada consola ha traído nuevas innovaciones a la serie, desde la introducción de gráficos 3D hasta la capacidad de jugar en línea con otros jugadores.\n\nLa historia de la serie de juegos es rica y compleja, con muchos personajes memorables y momentos emocionantes. La historia comienza con The Legend of Zelda, en la que Link recibe la tarea de rescatar a la princesa Zelda y derrotar a Ganon. La historia continúa en juegos posteriores, como A Link to the Past, Ocarina of Time y Breath of the Wild.\n\nCada juego presenta nuevos personajes, lugares y elementos de la trama, pero la serie ha mantenido un sentido de coherencia a lo largo de los años. Los fanáticos de la serie han creado teorías y especulaciones sobre la conexión entre los diferentes juegos, lo que ha llevado a una comunidad activa de jugadores y fanáticos en línea.\n\nAdemás de los juegos principales de la serie, The Legend of Zelda ha tenido muchos spin-offs y adaptaciones, incluyendo juegos de Game & Watch, juegos para Game Boy, juegos para celulares y una serie de televisión animada. La serie también ha inspirado libros, cómics y obras de arte de fanáticos.\n\nThe Legend of Zelda ha sido reconocida como una de las mejores series de videojuegos de todos los tiempos, y ha ganado numerosos premios y elogios a lo largo de los años. La serie ha vendido más de 108 millones de copias en todo el mundo y ha tenido un impacto duradero en la cultura popular. La serie continúa siendo popular hoy en día, con el lanzamiento de juegos como Breath of the Wild, que ha sido aclamado como uno de los mejores juegos de la historia."
+        intent.putExtra(EXTRA_TITLE, "Breve historia de The legend of zelda")
+        intent.putExtra(EXTRA_TEXT, historiaZelda)
+        startActivity(intent)
+    }
+
+    fun viewTextBtn3(view: View) {
+        val intent = Intent(this, PassageText::class.java)
+        var historiaHarryPotter = "Harry Potter es una serie de novelas de fantasía escrita por la autora británica J.K. Rowling. La historia sigue la vida de un joven huérfano llamado Harry Potter, quien descubre que es un mago y comienza a asistir a la Escuela de Magia y Hechicería de Hogwarts. A medida que Harry avanza en la escuela, descubre oscuros secretos sobre su pasado y su destino.\n\nLa serie de libros consta de siete volúmenes, publicados entre 1997 y 2007. Cada libro sigue un año en la vida de Harry y sus amigos Ron Weasley y Hermione Granger en Hogwarts, y cada uno presenta un enemigo diferente y más peligroso. La serie es conocida por su compleja trama y personajes bien desarrollados.\n\nLa serie de Harry Potter ha sido un éxito mundial, vendiendo más de 500 millones de copias en todo el mundo y traducida a más de 80 idiomas. Los libros han sido adaptados en una serie de películas de alto presupuesto, protagonizadas por Daniel Radcliffe, Rupert Grint y Emma Watson.\n\nAdemás de los libros y las películas, Harry Potter ha inspirado un universo expandido de juegos de video, parques temáticos, obras de teatro y otras formas de entretenimiento. La serie también ha generado una gran comunidad de fanáticos, que han creado sus propios sitios web, foros y eventos en todo el mundo.\n\nLa historia de Harry Potter es rica en detalles y complejidad, con muchos personajes memorables y momentos emocionantes. La serie aborda temas importantes como la amistad, la lealtad, el amor, el racismo y la muerte, y ha dejado una huella duradera en la cultura popular. Los fanáticos continúan debatiendo y especulando sobre la serie, y J.K. Rowling ha seguido expandiendo el universo de Harry Potter con spin-offs y precuelas."
+        intent.putExtra(EXTRA_TITLE, "Breve historia de Harry Potter")
+        intent.putExtra(EXTRA_TEXT, historiaHarryPotter)
+        startActivity(intent)
+    }
+}

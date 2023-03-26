@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HomeWork</string>
+    <string name="btn_title">Contar</string>
+    <string name="txt_texto">Escribe algo</string>
+    <string name="init_count">0</string>
+</resources>
